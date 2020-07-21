@@ -9,7 +9,6 @@ FROM 360cloud/wayne-ui-builder:v1.0.2 as frontend
 COPY src/frontend /workspace
 
 RUN cd /workspace && \
-    npm update && \
     npm run build:aot
 
 # build server
